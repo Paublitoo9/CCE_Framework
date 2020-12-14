@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{18129615-4D65-48E1-81E4-9C42D0811871}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CCE_Framework2</RootNamespace>
+    <AssemblyName>CCE_Framework2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.22.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Error.cs" />
+    <Compile Include="CrearCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearCurso.designer.cs">
+      <DependentUpon>CrearCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearEvento.designer.cs">
+      <DependentUpon>CrearEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cursos.designer.cs">
+      <DependentUpon>Cursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editar Perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editar Perfil.Designer.cs">
+      <DependentUpon>Editar Perfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Evento.cs" />
+    <Compile Include="fPaginaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPaginaPrincipal.designer.cs">
+      <DependentUpon>fPaginaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPortada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPortada.designer.cs">
+      <DependentUpon>fPortada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fRegistrarse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fRegistrarse.designer.cs">
+      <DependentUpon>fRegistrarse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InscripcionEventos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InscripcionEventos.designer.cs">
+      <DependentUpon>InscripcionEventos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InscripciónCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InscripciónCursos.designer.cs">
+      <DependentUpon>InscripciónCursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perfil.designer.cs">
+      <DependentUpon>Perfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="TablonDeAnuncios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablonDeAnuncios.designer.cs">
+      <DependentUpon>TablonDeAnuncios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.cs" />
+    <EmbeddedResource Include="CrearCurso.resx">
+      <DependentUpon>CrearCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearEvento.resx">
+      <DependentUpon>CrearEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cursos.resx">
+      <DependentUpon>Cursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editar Perfil.resx">
+      <DependentUpon>Editar Perfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPaginaPrincipal.resx">
+      <DependentUpon>fPaginaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPortada.resx">
+      <DependentUpon>fPortada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fRegistrarse.resx">
+      <DependentUpon>fRegistrarse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InscripcionEventos.resx">
+      <DependentUpon>InscripcionEventos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InscripciónCursos.resx">
+      <DependentUpon>InscripciónCursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perfil.resx">
+      <DependentUpon>Perfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TablonDeAnuncios.resx">
+      <DependentUpon>TablonDeAnuncios.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
